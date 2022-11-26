@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+// import { Main, Login, Join, Feed, Myroadmap } from "./pages/PageIndex";
+import Main from "./pages/Main";
+import Feed from "./pages/Feed";
+import Myroadmap from "./pages/Myroadmap";
+import Login from "./pages/Login";
+import JoinEmail from "./pages/join/JoinEmail";
+import JoinPassword from "./pages/join/JoinPassword";
+import JoinFavor from "./pages/join/JoinFavor";
+
+import Loading from "./components/Loading";
+import { Suspense } from "react";
+import "./App.scss";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<Routes>
+			<Route exact path="/" element={<Main />} />
+			<Route path="/feed" element={<Feed />} />
+			<Route path="/myroadmap" element={<Myroadmap />} />
+
+			<Route path="/login" element={<Login />} />
+			<Route path="/join-email" element={<JoinEmail />} />
+			<Route path="/join-password" element={<JoinPassword />} />
+			<Route path="/join-favor" element={<JoinFavor />} />
+		</Routes>
+		// <Suspense fallback={<Loading />}>
+		// </Suspense>
+	);
 }
 
 export default App;

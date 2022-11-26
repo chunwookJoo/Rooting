@@ -1,0 +1,78 @@
+@import "../../libs/index.scss";
+
+.login-container {
+	.login-form-container {
+		margin: 47px 20px 0 20px;
+		h2 {
+			font-size: 26px;
+			margin-top: 26px;
+		}
+
+		.login-input-form {
+			.input {
+				margin-top: 30px;
+			}
+
+			.MuiInputBase-input {
+				border-color: $color-primary;
+			}
+		}
+
+		.favorite-lists {
+			list-style: none;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			margin-top: 30px;
+			gap: 1rem;
+
+			li {
+				background-color: $color-more-light-grey;
+				height: 60px;
+				border-radius: 8px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				span {
+					color: $color-black;
+					font-size: 14px;
+				}
+			}
+
+			.active {
+				background-color: $color-light-primary;
+
+				span {
+					font-weight: bold;
+					color: $color-primary;
+				}
+			}
+		}
+	}
+
+	.login-btn-container {
+		position: absolute;
+		bottom: 34px;
+		width: 100%;
+		text-align: center;
+
+		.join-label {
+			width: 90%;
+			margin: 0 auto;
+			text-align: left;
+		}
+
+		.login-btn {
+			width: 90%;
+			height: 56px;
+			background-color: $color-primary;
+			color: $color-white;
+			margin-top: 16px;
+			@include base-btn;
+		}
+
+		.disabled {
+			background-color: $color-light-grey;
+		}
+	}
+}

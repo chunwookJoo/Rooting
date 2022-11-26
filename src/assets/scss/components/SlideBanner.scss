@@ -1,0 +1,13 @@
+@import "../../libs/index.scss";
+
+.main-banner-container {
+	.slide-item {
+		background-color: powderblue;
+		height: 200px;
+	}
+
+	.slick-prev,
+	.slick-next {
+		display: none !important;
+	}
+}
