@@ -67,7 +67,7 @@ const JoinEmail = () => {
 			</div>
 			<div className="login-btn-container">
 				<div className="join-label">
-					이미 회원이신가요? <Link to="/login">로그인</Link>
+					이미 회원이신가요? &nbsp;<Link to="/login">로그인</Link>
 				</div>
 				<Link to="/join-password">
 					<button

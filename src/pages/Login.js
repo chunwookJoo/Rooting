@@ -29,7 +29,7 @@ const Login = () => {
 			</div>
 			<div className="login-btn-container">
 				<div className="join-label">
-					아직 회원이 아니신가요? <Link to="/join-email">회원가입</Link>
+					아직 회원이 아니신가요? &nbsp;<Link to="/join-email">회원가입</Link>
 				</div>
 				<button className="login-btn">로그인</button>
 			</div>

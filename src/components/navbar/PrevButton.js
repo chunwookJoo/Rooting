@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { ReactComponent as ArrowBack } from "../../assets/libs/icon/icon-arrow-back-ios.svg";
+import { ReactComponent as ArrowBackIcon } from "../../assets/libs/icon/icon-arrow-back-ios.svg";
 
 const PrevButton = () => {
 	const navigate = useNavigate();
@@ -12,7 +12,7 @@ const PrevButton = () => {
 	return (
 		<div className="prev-container">
 			<span onClick={onClickBackPage} className="back-btn">
-				<ArrowBack size={24} />
+				<ArrowBackIcon size={24} />
 			</span>
 		</div>
 	);

@@ -1,1 +1,9 @@
 @import "../../libs/index.scss";
+
+.main-page-container {
+	.header-nav-container {
+		display: flex;
+		justify-content: space-between;
+		margin: 20px;
+	}
+}

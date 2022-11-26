@@ -1,9 +1,10 @@
 @import "../../libs/index.scss";
 
 .main-banner-container {
+	padding-bottom: 20px;
+
 	.slide-item {
-		background-color: powderblue;
-		height: 200px;
+		height: 120px;
 	}
 
 	.slick-prev,

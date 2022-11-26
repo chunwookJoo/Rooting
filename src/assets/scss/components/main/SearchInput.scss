@@ -1,0 +1,17 @@
+@import "../../../libs/_vars.scss";
+
+.search-container {
+	width: 70%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	background-color: $color-light-grey;
+	border-radius: 8px;
+
+	.search-input {
+		border: 0;
+		width: 80%;
+		padding: 4px;
+		background-color: $color-light-grey;
+	}
+}
