@@ -12,7 +12,9 @@ const MyInfo = ({ roadmap }) => {
 
 	const onChangeSwitch = (e) => {
 		setSwitchState(e.target.checked);
-		setPublishModalOpen(true);
+		if (e.target.checked) {
+			setPublishModalOpen(true);
+		}
 	};
 	return (
 		<div className="myinfo-container">

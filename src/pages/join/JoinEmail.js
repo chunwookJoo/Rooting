@@ -8,6 +8,11 @@ const JoinEmail = () => {
 	const [email, setEmail] = useState("");
 	const [nickname, setNickname] = useState("");
 
+	const body = {
+		email,
+		nickname,
+	};
+
 	const [emailState, setEmailState] = useState(false);
 
 	const onChangeInput = (e, setState) => {
@@ -70,7 +75,7 @@ const JoinEmail = () => {
 				<div className="join-label">
 					이미 회원이신가요? &nbsp;<Link to="/login">로그인</Link>
 				</div>
-				<Link to="/join-password">
+				<Link to="/join-password" state={body}>
 					<button
 						className={`${
 							email !== "" && nickname !== "" ? "" : "disabled"

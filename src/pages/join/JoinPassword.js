@@ -1,16 +1,22 @@
 import { TextField } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 // import { PrevButton } from "../../components/ComponentsIndex";
 import PrevButton from "../../components/navbar/PrevButton";
 
 const JoinPassword = () => {
+	const { state } = useLocation();
 	const [password, setPassword] = useState("");
 	const [passwordConfirm, setPasswordConfirm] = useState("");
 	const [passwordState, setPasswordState] = useState(false);
 
 	const onChangeInput = (e, setState) => {
 		setState(e.target.value);
+	};
+
+	const body = {
+		...state,
+		password,
 	};
 
 	useEffect(() => {
@@ -78,7 +84,7 @@ const JoinPassword = () => {
 				<div className="join-label">
 					이미 회원이신가요? &nbsp;<Link to="/login">로그인</Link>
 				</div>
-				<Link to="/join-favor">
+				<Link to="/join-favor" state={body}>
 					<button
 						className={passwordState ? "login-btn" : "login-btn disabled"}
 					>
