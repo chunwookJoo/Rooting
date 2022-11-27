@@ -1,0 +1,17 @@
+@import "../../../libs/index.scss";
+
+.modal-info {
+	margin-bottom: 1rem;
+}
+
+.modal-btn-container {
+	.modal-btns {
+		display: flex;
+		gap: 1rem;
+
+		.cancel {
+			color: $color-black;
+			background-color: $color-light-grey;
+		}
+	}
+}

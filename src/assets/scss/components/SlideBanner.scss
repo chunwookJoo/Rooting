@@ -1,9 +1,10 @@
 @import "../../libs/index.scss";
 
 .main-banner-container {
-	padding-bottom: 20px;
+	padding-top: 20px;
 
 	.slide-item {
+		background-color: $color-light-grey;
 		height: 120px;
 		h3 {
 			text-align: center;

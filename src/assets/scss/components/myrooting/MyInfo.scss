@@ -31,9 +31,8 @@
 	}
 
 	.user-profile-container {
-		margin: 20px;
-
 		.user-profile {
+			margin: 20px;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
@@ -48,6 +47,15 @@
 						color: $color-grey;
 					}
 				}
+			}
+
+			.open-switch {
+				font-size: 13px;
+			}
+
+			.open-roadmap {
+				color: $color-primary;
+				font-weight: bold;
 			}
 		}
 	}

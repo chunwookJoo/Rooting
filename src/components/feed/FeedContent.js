@@ -6,6 +6,7 @@ import { ReactComponent as UnLikeIcon } from "../../assets/libs/icon/icon-heart-
 import { ReactComponent as LikeIcon } from "../../assets/libs/icon/icon-heart-mono-base.svg";
 import { ReactComponent as ViewIcon } from "../../assets/libs/icon/icon-eye-on-mono.svg";
 import "../../assets/scss/components/feed/FeedContent.scss";
+import { useNavigate } from "react-router-dom";
 
 const dummyFeed = [
 	{
@@ -127,11 +128,22 @@ const dummyFeed = [
 ];
 
 const FeedContent = () => {
+	const navigate = useNavigate();
+	const onMoveRoadMapDetail = (e, item) => {
+		const $li = e.target.closest(".feed-container");
+		const { id } = $li.dataset;
+		navigate(`/feed/roadmap/${id}`, { state: item });
+	};
 	return (
 		<div className="feed-global-container">
 			{dummyFeed.map((item, index) => {
 				return (
-					<li className="feed-container">
+					<li
+						key={index}
+						data-id={index + 1}
+						className="feed-container"
+						onClick={(e) => onMoveRoadMapDetail(e, item)}
+					>
 						<div className="feed-category">
 							<label>{item.category}</label>
 						</div>

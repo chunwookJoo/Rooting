@@ -13,6 +13,7 @@ import Loading from "./components/Loading";
 import { Suspense } from "react";
 import "./App.scss";
 import ScrollToTop from "./ScrollToTop";
+import RoadmapDetail from "./pages/RoadmapDetail";
 
 function App() {
 	return (
@@ -21,6 +22,7 @@ function App() {
 			<Routes>
 				<Route exact path="/" element={<Main />} />
 				<Route path="/feed/roadmap" element={<Feed />} />
+				<Route path="/feed/roadmap/:id" element={<RoadmapDetail />} />
 				<Route path="/best/roadmap" element={<Best />} />
 				<Route path="/myroadmap" element={<Myroadmap />} />
 

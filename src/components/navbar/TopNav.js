@@ -26,9 +26,7 @@ const TopNav = () => {
 			{pathname === "/myroadmap" ? (
 				<div className="topnav-container">
 					<h2>마이루팅</h2>
-					<span>
-						<SettingIcon />
-					</span>
+					<SettingIcon />
 				</div>
 			) : (
 				<>
@@ -46,9 +44,7 @@ const TopNav = () => {
 					) : (
 						<div className="topnav-container">
 							<h2>
-								<span onClick={onClickBackPage} className="back-btn">
-									<ArrowBackIcon />
-								</span>
+								<ArrowBackIcon onClick={onClickBackPage} />
 								베스트
 							</h2>
 							<div className="nav">
