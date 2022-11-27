@@ -35,7 +35,7 @@ const TopNav = () => {
 							<h2>피드</h2>
 							<div className="nav">
 								<NavLink to="/feed/roadmap">로드맵</NavLink>
-								<NavLink to="/feed/activity">활동</NavLink>
+								<Link>활동</Link>
 							</div>
 							<span>
 								<SearchIcon />
@@ -49,7 +49,7 @@ const TopNav = () => {
 							</h2>
 							<div className="nav">
 								<NavLink to="/best/roadmap">로드맵</NavLink>
-								<NavLink to="/best/activity">활동</NavLink>
+								<Link>활동</Link>
 							</div>
 							<span>
 								<SearchIcon />

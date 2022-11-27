@@ -40,7 +40,7 @@ const dummyFeed = [
 	},
 	{
 		category: "개발/IT",
-		title: "5년차 직장인의 평범한 로드맵",
+		title: "주니어 개발자의 로드맵",
 		feedIsLike: true,
 		feedLikeCount: "152",
 		roadmap: [
@@ -63,7 +63,7 @@ const dummyFeed = [
 	},
 	{
 		category: "개발/IT",
-		title: "8년차 직장인의 평범한 로드맵",
+		title: "개발자가 되고픈 취준생 로드맵",
 		feedIsLike: true,
 		feedLikeCount: "152",
 		roadmap: [
@@ -98,24 +98,24 @@ const dummyFeed = [
 	},
 	{
 		category: "개발/IT",
-		title: "5년차 직장인의 평범한 로드맵",
+		title: "갓생사는 로드맵",
 		feedIsLike: false,
 		feedLikeCount: "152",
 		roadmap: [
 			{
-				career: "프론트개발",
+				career: "백엔드 개발",
 				careerPeriod: "2020.1~2020.6",
 				careerisLike: true,
 				careerLikeCount: "12",
 			},
 			{
-				career: "프론트개발",
+				career: "백엔드 개발",
 				careerPeriod: "2020.1~2020.6",
 				careerisLike: true,
 				careerLikeCount: "23",
 			},
 			{
-				career: "프론트개발",
+				career: "백엔드 개발",
 				careerPeriod: "2020.1~2020.6",
 				careerisLike: true,
 				careerLikeCount: "20",
