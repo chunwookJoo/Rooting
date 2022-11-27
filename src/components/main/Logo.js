@@ -3,7 +3,9 @@ import React from "react";
 const Logo = () => {
 	return (
 		<div>
-			<h2>루팅🌴</h2>
+			<h2>
+				<span style={{ color: "#8b7af6" }}>Root</span>ing.
+			</h2>
 		</div>
 	);
 };

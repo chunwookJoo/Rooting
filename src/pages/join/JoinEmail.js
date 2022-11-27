@@ -1,7 +1,8 @@
 import { TextField } from "@mui/material";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { PrevButton } from "../../components/ComponentsIndex";
+// import { PrevButton } from "../../components/ComponentsIndex";
+import PrevButton from "../../components/navbar/PrevButton";
 
 const JoinEmail = () => {
 	const [email, setEmail] = useState("");

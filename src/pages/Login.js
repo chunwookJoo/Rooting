@@ -1,5 +1,6 @@
 import React from "react";
-import { PrevButton } from "../components/ComponentsIndex";
+// import { PrevButton } from "../components/ComponentsIndex";
+import PrevButton from "../components/navbar/PrevButton";
 import { TextField } from "@mui/material";
 import { Link } from "react-router-dom";
 import "../assets/scss/pages/Login.scss";

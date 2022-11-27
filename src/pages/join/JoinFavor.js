@@ -2,7 +2,8 @@ import { TextField } from "@mui/material";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { JoinFavorItem } from "./JoinFavorItem";
-import { PrevButton } from "../../components/ComponentsIndex";
+// import { PrevButton } from "../../components/ComponentsIndex";
+import PrevButton from "../../components/navbar/PrevButton";
 
 const JoinFavor = () => {
 	const [selectFavorItem, setSelectFavorItem] = useState(null);

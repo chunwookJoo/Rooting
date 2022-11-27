@@ -1,10 +1,16 @@
 import React from "react";
-import { BottomNav } from "../components/ComponentsIndex";
+// import { BottomNav } from "../components/ComponentsIndex";
+import BottomNav from "../components/navbar/BottomNav";
+import TopNav from "../components/navbar/TopNav";
+import MyInfo from "../components/myrooting/MyInfo";
+import Career from "../components/myrooting/Career";
 
 const Myroadmap = () => {
 	return (
 		<div>
-			<h1>마이로드맵</h1>
+			<TopNav />
+			<MyInfo />
+			<Career />
 			<BottomNav />
 		</div>
 	);

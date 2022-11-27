@@ -1,0 +1,48 @@
+@import "../../../libs/_vars.scss";
+
+.myrooting-career-container {
+	padding-bottom: 120px;
+
+	.line {
+		height: 16px;
+		background-color: $color-light-grey;
+	}
+
+	.career-roadmap {
+		margin: 0 20px;
+
+		.career-roadmap-year {
+			display: flex;
+			justify-content: space-between;
+			padding: 20px 0;
+
+			span {
+				&:first-child {
+					font-size: 18px;
+					font-weight: bold;
+				}
+			}
+		}
+
+		.career {
+			margin-bottom: 8px;
+			span {
+				font-size: 13px;
+				color: $color-grey;
+
+				&:first-child {
+					color: $color-black;
+					font-size: 18px;
+					font-weight: bold;
+				}
+			}
+		}
+
+		.career-description {
+			font-size: 14px;
+			color: $color-dark-grey;
+			line-height: 24px;
+			margin-bottom: 1rem;
+		}
+	}
+}

@@ -1,7 +1,8 @@
 import { TextField } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { PrevButton } from "../../components/ComponentsIndex";
+// import { PrevButton } from "../../components/ComponentsIndex";
+import PrevButton from "../../components/navbar/PrevButton";
 
 const JoinPassword = () => {
 	const [password, setPassword] = useState("");

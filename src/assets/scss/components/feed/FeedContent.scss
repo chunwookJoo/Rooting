@@ -1,0 +1,100 @@
+@import "../../../libs/_vars.scss";
+
+.feed-global-container {
+	margin: 20px;
+	padding-bottom: 100px;
+
+	.feed-container {
+		list-style: none;
+		padding: 1rem 0;
+		border-bottom: 1px solid $color-light-grey;
+
+		.feed-category {
+			label {
+				font-size: 15px;
+				color: $color-primary;
+			}
+		}
+
+		.feed-title {
+			font-size: 17px;
+			margin-bottom: 6px;
+		}
+
+		.career-global-container {
+			margin-bottom: 12px;
+
+			.career-container {
+				margin-bottom: 4px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+
+				.career-period-container {
+					span {
+						margin: 0 3px;
+						font-size: 13px;
+					}
+					.career-period {
+						color: $color-grey;
+					}
+				}
+
+				.career-like-container {
+					display: flex;
+					align-items: center;
+
+					span {
+						font-size: 13px;
+						margin: 0 1px;
+
+						svg {
+							width: 13px;
+							height: 13px;
+						}
+					}
+				}
+			}
+		}
+
+		.author-container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			.author-info-container {
+				display: flex;
+				align-items: center;
+				gap: 1rem;
+
+				.author-job-container {
+					display: flex;
+					gap: 10px;
+					margin-bottom: 2px;
+
+					span {
+						font-size: 13px;
+						&:last-child {
+							color: $color-dark-grey;
+						}
+					}
+				}
+
+				.view-like-container {
+					display: flex;
+					gap: 10px;
+
+					span {
+						font-size: 13px;
+						color: $color-dark-grey;
+					}
+				}
+			}
+
+			.feed-like-container {
+				display: flex;
+				gap: 10px;
+			}
+		}
+	}
+}

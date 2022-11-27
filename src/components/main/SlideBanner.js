@@ -8,7 +8,6 @@ import { SlideBannerItem } from "./SlideBannerItem";
 
 const SlideBanner = () => {
 	const settings = {
-		// dots: true,
 		infinite: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
